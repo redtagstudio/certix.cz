@@ -1,0 +1,57 @@
+a {
+  color: var(--base-link-color);
+  text-decoration: none;
+  background: transparent;
+
+  &:active,
+  &:hover {
+    text-decoration: none;
+    outline: 0;
+  }
+
+  &:hover {
+    color: black;
+  }
+
+  &[disabled] {
+    color: var(--base-font-color);
+    pointer-events: none;
+  }
+}
+
+// Remove when updated
+h1, h2, h3, h4 {
+  text-decoration: none;
+  text-transform: none;
+  // Force non-link color
+  a {
+    color: var(--base-font-color);
+  }
+}
+
+p, li, h4 {
+  line-height: var(--grid-gutter);
+}
+
+p, ul, ol, pre, table, blockquote {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: var(--grid-gutter);
+}
+
+h1, .h1 {
+  margin-top: 0.5909090909090909em;
+  margin-bottom: 1.1818181818181819em;
+  font-size: 2.75em;
+  font-weight: 700;
+  line-height: 1.1818181818181819em;
+  color: var(--h1-color);
+}
+
+h4, .h4 {
+  margin-top: 1.4444444444444444em;
+  margin-bottom: 0;
+  font-size: 1.125em;
+  font-weight: bold;
+  color: var(--h4-color);
+}

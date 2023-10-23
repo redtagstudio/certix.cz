@@ -1,0 +1,44 @@
+---
+import Header from "components/main/Header.astro";
+import Background from "components/main/Background.astro";
+import Contanct from "components/main/Contanct.astro";
+
+import "less/base/include.less";
+import Footer from "components/main/Footer.astro";
+
+interface Props {
+	title: string;
+	description?: string;
+	subtitle?: string;
+}
+
+const {
+	title = "",
+	description = "Vydávání, správa a monitoring uživatelských u serverových certifikátů",
+	subtitle = "Certix.cz",
+} = Astro.props;
+
+const finalTitle = title === "" ? subtitle : `${title} - ${subtitle}`;
+---
+
+<!doctype html>
+<html lang="cs">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="title" content={title} />
+		<meta name="description" content={description} />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{finalTitle}</title>
+	</head>
+	<body>
+		<Background />
+		<Header />
+		<div class="container">
+			<slot />
+			<Contanct />
+		</div>
+		<Footer />
+	</body>
+</html>

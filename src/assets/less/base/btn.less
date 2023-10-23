@@ -1,0 +1,24 @@
+.btn {
+  color :white;
+  padding: var(--grid-gutter-smallest) var(--grid-gutter-small);
+  border-radius: calc(var(--grid-gutter-smallest) / 2);
+
+  &-primary {
+    color: var(--btn-primary-color);
+    background: var(--btn-primary-bg-color) 0% 0% no-repeat padding-box;
+    border: 2px solid var(--btn-primary-bg-color);
+  }
+  
+  &-bordered {
+    border: 2px solid var(--btn-color);
+
+    &-green {
+      border-color: var(--base-green-color);
+    }
+  }
+
+  &-small {
+    font-size: var(--font-14-size);
+    padding: var(--grid-14-gutter-smallest) var(--grid-14-gutter-smallest);
+  }
+}

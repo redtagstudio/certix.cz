@@ -1,0 +1,18 @@
+---
+import { Image, getImage } from "astro:assets";
+
+import logo from "../../assets/imgs/bg-header.png";
+
+import "./Background.less";
+---
+
+<div role="none" id="bg">
+  <Image
+    src={logo}
+    width={logo.width / 2}
+    densities={[1.5, 2, 2.5]}
+    alt="Background image"
+    role="none"
+    aria-hidden="true"
+  />
+</div>

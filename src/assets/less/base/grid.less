@@ -1,0 +1,63 @@
+@import '../variables.less';
+
+@grid-gutter: var(--grid-gutter);
+
+.container-fluid {
+  width: 100%;
+}
+
+// Mobile Container
+.container, .container-fluid {
+  padding-right: calc(@grid-gutter / 2);
+  padding-left: calc(@grid-gutter / 2);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+// Tablet Container - fluid
+@media only screen and (min-width: @breakpoint-tablet) {
+  .container {
+    width: 100%;
+  }
+}
+
+// Desktop Container
+@media only screen and (min-width: @breakpoint-desktop) {
+  .container, .container-desktop {
+    width: auto;
+    max-width: @container-hd;
+  }
+
+  .container-desktop {
+    padding-right: calc(@grid-gutter / 2);
+    padding-left: calc(@grid-gutter / 2);
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+// Desktop Container
+@media only screen and (min-width: @breakpoint-xhd) {
+  .container, .container-xhd {
+    width: auto;
+    max-width: @container-xhd;
+  }
+
+  .container-xhd {
+    padding-right: calc(@grid-gutter / 2);
+    padding-left: calc(@grid-gutter / 2);
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media only screen and (min-width: @container-xhd) {
+  .container-fluid.container-xhd  {
+    width: @container-xhd;
+    max-width: @container-xhd;
+  }
+}

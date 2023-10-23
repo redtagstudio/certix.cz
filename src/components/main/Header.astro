@@ -1,0 +1,42 @@
+---
+import { Image } from "astro:assets";
+import Logo from "./Logo.astro";
+
+import GrapImg from "../../assets/imgs/header-graph.png";
+
+import "./Header.less";
+---
+
+<header class="overflow-hidden">
+  <div class="logo-wrapper container">
+    <Logo />
+  </div>
+  <div class="header-wrapper container">
+    <div class="information">
+      <p class="main-info uppercase">
+        <span class="title">Vydávání, správa a monitoring</span>
+        <br />
+        <span class="subtitle">uživatelských i serverových certifikátů</span>
+        <br />
+        <span class="description">
+          pro spoleřnost a organizac na jednom místě
+        </span>
+      </p>
+      <a
+        href="mailto:hello@certix.cz"
+        class="btn btn-bordered btn-bordered-green btn-small"
+      >
+        Domluvte si nezávaznou konzultaci
+      </a>
+    </div>
+    <Image
+      src={GrapImg}
+      alt="Graf"
+      densities={[0.5, 1, 1.5, 2]}
+      class="graph"
+      loading={"lazy"}
+    />
+
+    <div class="scroller hidden">Dozvědět se více</div>
+  </div>
+</header>

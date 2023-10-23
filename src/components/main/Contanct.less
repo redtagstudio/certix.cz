@@ -1,0 +1,113 @@
+@import '../../assets/less/variables.less';
+
+.contact-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  > h1 {
+    color: var(--base-title-color);
+  }
+
+  > div.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--grid-gutter);
+
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: var(--grid-gutter);
+
+      .sub-text {
+        font-size: var(--grid-gutter);
+        line-height: 1.5em;
+        font-weight: bold;
+        margin-bottom: 1em;
+        text-align: center;
+        color: var(--base-primary-color);
+      }
+    }
+
+    .contact-blocks {
+      display: flex;
+      flex-direction: column;
+      gap: var(--grid-gutter);
+
+      .block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        color: var(--base-primary-color);
+        gap: var(--grid-14-gutter-small);
+        
+        svg {
+          color: var(--base-primary-color);
+        }
+
+        .block-content {
+          h4 {
+            color: var(--base-primary-color);
+
+            &:not(.plain) {
+              text-transform: uppercase;
+            }
+          }
+
+          a {
+            font-size: 1.25em;
+          }
+
+          .info {
+            font-size: var(--font-18-size);
+            line-height: 1.9444444444444444em; // 35px
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: @breakpoint-desktop) {
+  .contact-wrapper {
+    justify-content: left;
+    align-items: flex-start;
+    
+    > div.contact-container {
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+
+      .contact-info {
+        align-items: flex-start;
+
+        .sub-text {
+          text-align: left;
+        }
+      }
+
+      .contact-blocks {
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-grow: 1;
+        gap: 0;
+
+        .block {
+          flex-direction: row;
+          text-align: left;
+          gap: 0;
+
+          .block-content {
+            display: flex;
+            flex-direction: column;
+            margin-left: calc(var(--grid-gutter-small) + var(--grid-gutter));
+            height: calc(var(--grid-14-gutter-large) * 2.9);
+          }
+        }
+      }
+    }
+  }
+}
