@@ -1,4 +1,4 @@
-# ![Alt text](public/favicon.svg) [Certix.cz](https://certix.cz)
+#  ![Alt text](public/favicon-32x32.png) [Certix.cz](https://certix.cz)
  - Issuing, management and monitoring of user and server certificates for companies and organizations in one place.
  - Simple land page using static [Astro](astro.build).
 
