@@ -1,7 +1,6 @@
 ---
 import { Image } from "astro:assets";
 import Logo from "./Logo.astro";
-
 import GrapImg from "../../assets/imgs/header-graph.png";
 
 import "./Header.less";
@@ -32,9 +31,10 @@ import "./Header.less";
     <Image
       src={GrapImg}
       alt="Graf"
-      densities={[0.5, 1, 1.5, 2]}
+      densities={[0.5, 1, 1.5, 2, 2.5, 3]}
       class="graph"
       loading={"lazy"}
+      width={1120}
     />
 
     <div class="scroller hidden">Dozvědět se více</div>
