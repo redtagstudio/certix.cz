@@ -29,22 +29,22 @@ jobs:
       - name: Get branch name (merge)
         if: github.event_name != 'pull_request'
         shell: bash
-        run: echo "BRANCH_NAME=$(echo ${GITHUB_REF#refs/heads/} | tr / -)" >> $GITHUB_ENV
+        run: echo "::set-output name=branch_name::$(echo ${GITHUB_REF#refs/heads/} | tr / -)"
 
       - name: Get branch name (pull request)
         if: github.event_name == 'pull_request'
         shell: bash
-        run: echo "BRANCH_NAME=$(echo ${GITHUB_HEAD_REF} | tr / -)" >> $GITHUB_ENV
+        run: echo "::set-output name=branch_name::$(echo ${GITHUB_HEAD_REF} | tr / -)"
 
       - name: Debug
-        run: echo ${{ env.BRANCH_NAME }}
+        run: echo ${{ steps.branch.outputs.branch_name }}
 
   deploy:
     needs: build
     runs-on: ubuntu-latest
     environment:
-      name: ${{ env.BRANCH_NAME }}.stage.certix.cz
-      url: https://${{ env.BRANCH_NAME }}.stage.certix.cz
+      name: ${{ steps.branch.outputs.branch_name }}.stage.certix.cz
+      url: https://${{ steps.branch.outputs.branch_name }}.stage.certix.cz
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
