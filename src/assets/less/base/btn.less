@@ -3,17 +3,36 @@
   padding: var(--grid-gutter-smallest) var(--grid-gutter-small);
   border-radius: calc(var(--grid-gutter-smallest) / 2);
 
+  &:hover {
+    color: white;
+  }
+
   &-primary {
     color: var(--btn-primary-color);
-    background: var(--btn-primary-bg-color) 0% 0% no-repeat padding-box;
+    background-color: var(--btn-primary-bg-color);
+    background-clip: padding-box;
+    background-repeat:no-repeat;
+    background-position: 0% 0%;
     border: 2px solid var(--btn-primary-bg-color);
+    
+    &:hover {
+      background-color: var(--btn-primary-bg-over-color);
+    }
   }
   
   &-bordered {
     border: 2px solid var(--btn-color);
 
+    &:hover {
+      border-color: white;
+    }
+
     &-green {
       border-color: var(--base-green-color);
+
+      &:hover {
+        border-color: var(--base-green-hover-color);
+      }
     }
   }
 
