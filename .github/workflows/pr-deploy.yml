@@ -29,12 +29,12 @@ jobs:
       - name: Get branch name (merge)
         if: github.event_name != 'pull_request'
         shell: bash
-        run: echo "::set-output name=branch_name::$(echo ${GITHUB_REF#refs/heads/} | tr / -)"
+        run: echo "::set-output name=branch_name::$(echo ${GITHUB_REF#refs/heads/} | tr / -)" >> $GITHUB_OUTPUT
 
       - name: Get branch name (pull request)
         if: github.event_name == 'pull_request'
         shell: bash
-        run: echo "::set-output name=branch_name::$(echo ${GITHUB_HEAD_REF} | tr / -)"
+        run: echo "::set-output name=branch_name::$(echo ${GITHUB_HEAD_REF} | tr / -)" >> $GITHUB_OUTPUT
 
       - name: Debug
         run: echo ${{ steps.branch.outputs.branch_name }}
