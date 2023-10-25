@@ -1,4 +1,4 @@
-name: Deploy
+name: Deploy production
 
 on:
   # Trigger the workflow every time you push to the `main` branch
@@ -27,8 +27,8 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      name: certix.cz
+      url: certix.cz
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
