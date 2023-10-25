@@ -25,26 +25,26 @@ jobs:
 
   branch:
     runs-on: ubuntu-latest
+    # Map a step output to a job output
+    outputs:
+      branch_name: ${{ steps.branch.outputs.branch_name }}
     steps:
-      - name: Get branch name (merge)
-        if: github.event_name != 'pull_request'
-        shell: bash
-        run: echo "::set-output name=branch_name::$(echo ${GITHUB_REF#refs/heads/} | tr / -)" >> $GITHUB_OUTPUT
-
       - name: Get branch name (pull request)
-        if: github.event_name == 'pull_request'
         shell: bash
+        id: branch
         run: echo "::set-output name=branch_name::$(echo ${GITHUB_HEAD_REF} | tr / -)" >> $GITHUB_OUTPUT
 
       - name: Debug
         run: echo ${{ steps.branch.outputs.branch_name }}
 
   deploy:
-    needs: build
+    needs: 
+      - build
+      - branch
     runs-on: ubuntu-latest
     environment:
-      name: ${{ steps.branch.outputs.branch_name }}.stage.certix.cz
-      url: https://${{ steps.branch.outputs.branch_name }}.stage.certix.cz
+      name: ${{ needs.branch.outputs.branch_name }}.stage.certix.cz
+      url: https://${{ needs.branch.outputs.branch_name }}.stage.certix.cz
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
