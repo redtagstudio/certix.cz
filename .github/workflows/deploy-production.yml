@@ -28,7 +28,7 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: certix.cz
-      url: certix.cz
+      url: https://certix.cz
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
