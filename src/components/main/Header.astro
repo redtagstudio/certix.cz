@@ -2,41 +2,59 @@
 import { Image } from "astro:assets";
 import Logo from "./Logo.astro";
 import GrapImg from "../../assets/imgs/header-graph.png";
+import Background from "./Background.astro";
 
 import "./Header.less";
 ---
 
-<header class="overflow-hidden">
-  <div class="logo-wrapper container">
-    <Logo />
-  </div>
-  <div class="header-wrapper container">
-    <div class="information">
-      <p class="main-info uppercase">
-        <span class="title">Vydávání, správa a monitoring</span>
-        <br />
-        <span class="subtitle">uživatelských i serverových certifikátů</span>
-        <br />
-        <span class="description">
-          pro společnosti a organizace na jednom místě
-        </span>
-      </p>
-      <a
-        href="mailto:info@certix.cz"
-        class="btn btn-bordered btn-bordered-green btn-small"
-      >
-        Domluvte si nezávaznou konzultaci
-      </a>
+<script src="../../scripts/bindLinkScroll.ts"></script>
+<header id="layout-header" class="overflow-hidden">
+  <Background />
+  <div class="container">
+    <div class="logo-wrapper">
+      <Logo />
+      <nav>
+        <ul class="no-margin-bottom">
+          <li>
+            <a href="#how-we-work">Co děláme</a>
+          </li>
+          <li>
+            <a href="#product">Produkt</a>
+          </li>
+          <li>
+            <a href="#contact">Kontakt</a>
+          </li>
+        </ul>
+      </nav>
+      <hr class="menu-line" />
     </div>
-    <Image
-      src={GrapImg}
-      alt="Graf"
-      densities={[0.5, 1, 1.5, 2, 2.5, 3]}
-      class="graph"
-      loading={"lazy"}
-      width={1120}
-    />
-
-    <div class="scroller hidden">Dozvědět se více</div>
+    <div class="header-wrapper container">
+      <div class="information">
+        <p class="main-info uppercase">
+          <span class="title">Vydávání, správa a monitoring</span>
+          <br />
+          <span class="subtitle">uživatelských i serverových certifikátů</span>
+          <br />
+          <span class="description">
+            pro společnosti a organizace na jednom místě
+          </span>
+        </p>
+        <a
+          href="mailto:info@certix.cz"
+          class="btn btn-bordered btn-bordered-green btn-small"
+        >
+          Domluvte si nezávaznou konzultaci
+        </a>
+      </div>
+      <Image
+        src={GrapImg}
+        alt="Graf"
+        densities={[0.5, 1, 1.5, 2, 2.5, 3]}
+        class="graph"
+        loading={"lazy"}
+        width={1120}
+      />
+    </div>
   </div>
+  <a href="#platform" class="scroller">Dozvědět se více</a>
 </header>

@@ -1,5 +1,27 @@
 ---
+import LogoLine from "components/block/LogoLine.astro";
 import Layout from "../layouts/Layout.astro";
+import Platform from "components/block/Platform.astro";
+import UseFor from "components/block/UseFor.astro";
+import Advantages from "components/block/Advantages.astro";
+import Product from "components/block/Product.astro";
+import SmartThing from "components/block/SmartThing.astro";
+import HowWeWork from "components/block/HowWeWork.astro";
 ---
 
-<Layout title="Systém pro vydávání kvalifikovaných certifikátů v místě společnosti" />
+<Layout
+  title="Systém pro vydávání kvalifikovaných certifikátů v místě společnosti"
+  withContainer={false}
+>
+  <div class="container">
+    <Platform />
+  </div>
+  <UseFor />
+  <div class="container">
+    <LogoLine />
+    <Advantages />
+    <Product />
+    <SmartThing />
+    <HowWeWork />
+  </div>
+</Layout>

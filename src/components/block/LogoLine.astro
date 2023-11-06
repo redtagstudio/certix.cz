@@ -1,0 +1,37 @@
+---
+import { Image } from "astro:assets";
+import PragueLogo from "../../assets/imgs/logos/prague.svg?raw";
+import CertisysLogo from "../../assets/imgs/logos/certisys.png";
+import RedTagLogo from "../../assets/imgs/logos/redtag.svg?raw";
+import EIdentityLogo from "../../assets/imgs/logos/eidentity.svg?raw";
+import CzechPointLogo from "../../assets/imgs/logos/czechpoint.png";
+import ThalesLogo from "../../assets/imgs/logos/thales.svg?raw";
+import AskonLogo from "../../assets/imgs/logos/askon.svg?raw";
+import GemaltoLogo from "../../assets/imgs/logos/gemalto.svg?raw";
+
+import "./LogoLine.less";
+---
+
+<div class="logo-line-wrapper">
+  <div class="logo-line">
+    <Fragment set:html={PragueLogo} />
+    <Image
+      src={CertisysLogo}
+      alt={"certisys-logo"}
+      densities={[1, 1.5, 2, 2.5, 3]}
+      width={67}
+    />
+    <Fragment set:html={RedTagLogo} />
+    <Fragment set:html={EIdentityLogo} />
+    <Image
+      src={CzechPointLogo}
+      alt={"czechpoint-logo"}
+      densities={[1, 1.5, 2, 2.5, 3]}
+      width={81}
+    />
+    <Fragment set:html={ThalesLogo} />
+    <Fragment set:html={AskonLogo} />
+    <Fragment set:html={GemaltoLogo} />
+  </div>
+  <hr />
+</div>

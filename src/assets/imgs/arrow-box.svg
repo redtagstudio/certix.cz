@@ -1,0 +1,10 @@
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 33 33">
+  <g id="invisible_box" data-name="invisible box">
+    <rect id="Rectangle_145" data-name="Rectangle 145" width="33" height="33" fill="none"/>
+  </g>
+  <g id="Q3_icons" data-name="Q3 icons" transform="translate(1.375 3)">
+    <path id="Path_373" data-name="Path 373" d="M14.756,27.017a1.438,1.438,0,0,0,.934-2.516L12.6,21.986l3.091-2.516a1.438,1.438,0,1,0-1.869-2.156L9.51,20.908a1.438,1.438,0,0,0,0,2.156l4.313,3.594a1.366,1.366,0,0,0,.934.359Z" transform="translate(-1.975 -9.049)" fill="currentColor"/>
+    <path id="Path_374" data-name="Path 374" d="M30.444,27.108a1.438,1.438,0,0,1-.934-2.516L32.6,22.076l-3.091-2.516A1.438,1.438,0,0,1,31.378,17.4L35.691,21a1.438,1.438,0,0,1,0,2.156l-4.313,3.594A1.366,1.366,0,0,1,30.444,27.108Z" transform="translate(-11.6 -9.139)" fill="currentColor"/>
+    <path id="Path_375" data-name="Path 375" d="M32.188,6H3.438A1.438,1.438,0,0,0,2,7.438v23a1.438,1.438,0,0,0,1.438,1.438h28.75a1.438,1.438,0,0,0,1.438-1.438v-23A1.438,1.438,0,0,0,32.188,6ZM30.75,29H4.875V8.875H30.75Z" transform="translate(-2 -6)" fill="currentColor"/>
+  </g>
+</svg>

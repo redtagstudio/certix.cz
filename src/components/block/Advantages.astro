@@ -1,0 +1,43 @@
+---
+import HandShakeIcon from "../../assets/imgs/hand-shake.svg?raw";
+import BubbleConnectIcon from "../../assets/imgs/bubble-connect.svg?raw";
+import ShieldIcon from "../../assets/imgs/shield.svg?raw";
+
+import "./Advantages.less";
+---
+
+<div class="advantages-wrapper margin-bottom-large">
+  <div class="block">
+    <Fragment set:html={HandShakeIcon} />
+    <div>
+      <h4 class="margin-bottom-small">Přizpůsobivost</h4>
+      <p>
+        Otevřený integrační systém s možností implementace na míru vašim
+        potřebám. S námi lze produktové procesy ladit dle potřeb vaší
+        organizace.
+      </p>
+    </div>
+  </div>
+  <div class="block">
+    <Fragment set:html={BubbleConnectIcon} />
+    <div>
+      <h4 class="margin-bottom-small">Rozvoj</h4>
+      <p>
+        Inovace a optimalizace jsou pro nás hnací silou. Systém kontinuálně
+        rozvíjíme o nové funkce a procesy automatizujeme, abychom zajistili
+        maximální efektivitu a výkon.
+      </p>
+    </div>
+  </div>
+  <div class="block">
+    <Fragment set:html={ShieldIcon} />
+    <div>
+      <h4 class="margin-bottom-small">Bezpečnost</h4>
+      <p>
+        Vaše data jsou bezpečně šifrována na našich serverech či v cloudu,
+        splňujeme EU nařízení eIDAS a dodržujeme bezpečnostní politiky
+        organizace.
+      </p>
+    </div>
+  </div>
+</div>

@@ -6,7 +6,8 @@
       "components/*": ["src/components/*"],
       "assets/*": ["src/assets/*"],
       "less/*": ["src/assets/less/*"],
-      "imgs/*": ["src/assets/imgs/*"]
+      "imgs/*": ["src/assets/imgs/*"],
+      "scripts/*": ["src/scripts/*"]
     }
   }
 }

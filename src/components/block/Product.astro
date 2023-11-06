@@ -1,0 +1,139 @@
+---
+import { Image } from "astro:assets";
+import OperatorImage from "imgs/operatorApp.png";
+import ClientImage from "imgs/clientApp.png";
+import CmsImage from "imgs/cms.png";
+import AgentImage from "imgs/agent.png";
+import XConnectImage from "imgs/x-connect.png";
+
+import "./Product.less";
+---
+
+<div class="product-wrapper text-center margin-bottom-large">
+  <h1 id="product" class="no-margin-bottom">Produkt</h1>
+  <h2 class="margin-bottom-large">Jednotlivé součásti řešení a výhody</h2>
+  <div class="block">
+    <div>
+      <h3 class="margin-bottom uppercase font-normal">CMS</h3>
+      <p>
+        Centralizované řešení pro správu životního cyklu digitálních certifikátů
+        a tokenů/čipových karet. Zastřešujeme všechny potřebné procesy v souladu
+        se standardem eIDAS a NIS2 od přiřazení kvalifikovaného prostředku
+        uživateli, vydání a obnovu certifikátů až po zneplatnění a následnou
+        recyklaci tokenu. Vše pod kontrolou díky centrální správě systému CMS.
+      </p>
+      <p>
+        <b>
+          Vše probíhá pod střechou organizace bez nutnosti návštěvy externích
+          certifikačních autorit.
+        </b>
+      </p>
+    </div>
+    <div class="image-container">
+      <Image
+        src={CmsImage}
+        alt="dashboard"
+        densities={[0.5, 1, 1.5, 2, 2.5, 3]}
+        loading={"lazy"}
+        width={480}
+      />
+    </div>
+  </div>
+  <div class="block">
+    <div class="image-container">
+      <Image
+        src={AgentImage}
+        alt="dashboard"
+        densities={[0.5, 1, 1.5, 2, 2.5, 3]}
+        loading={"lazy"}
+        width={480}
+      />
+    </div>
+    <div>
+      <h3 class="margin-bottom uppercase font-normal">SERVER AGENT</h3>
+      <p>
+        Systém Certix lze rozšířit o unikátní modul, který zajišťuje kompletní
+        správu serverových certifikátů. Agent poskytuje přehledný monitoring
+        nainstalovaných serverových certifikátů na serverech organizace. Zároveň
+        umožňuje vydávání a automatickou instalaci serverových certifikátů při
+        napojení na interní CA organizace.
+      </p>
+      <p>
+        <b>
+          Serverové certifikáty pod kontrolou na jednom místě. Eliminujte
+          nečekané výpadky služeb.
+        </b>
+      </p>
+    </div>
+  </div>
+  <div class="block">
+    <div>
+      <h3 class="margin-bottom uppercase font-normal">X-CONNECT</h3>
+      <p>
+        Integrace na interní certifikační autoritu PKI pro vydávání a správu
+        certifikátů. Napojení na centrální zdroj identit Active directory -
+        zdroj uživatelů, automatizace procesu synchronizace akcí a uživatelských
+        dat. Přímá integrace na kvalifikované poskytovatele vytvářející důvěru
+        eIdentity, Češka pošta. Přímé napojení a synchronizace dat s CzechPoint.
+      </p>
+      <p>
+        <b>Optimalizujte svůj čas a procesy propojováním služeb a systémů.</b>
+      </p>
+    </div>
+    <div class="image-container">
+      <Image
+        src={XConnectImage}
+        alt="dashboard"
+        densities={[0.5, 1, 1.5, 2, 2.5, 3]}
+        loading={"lazy"}
+        width={480}
+        class={"drop-shadow"}
+      />
+    </div>
+  </div>
+  <div class="block">
+    <div class="image-container multi-img">
+      <Image
+        src={ClientImage}
+        alt="dashboard"
+        densities={[0.5, 1, 1.5, 2, 2.5, 3]}
+        loading={"lazy"}
+        width={480}
+      />
+      <Image
+        src={OperatorImage}
+        alt="dashboard"
+        densities={[0.5, 1, 1.5, 2, 2.5, 3]}
+        loading={"lazy"}
+        width={480}
+      />
+    </div>
+    <div>
+      <h3 class="margin-bottom uppercase font-normal">
+        APLIKACE PRO OPERÁTORY A UŽIVATELE
+      </h3>
+      <p>
+        <b>Uživatelská aplikace</b> slouží k jednoduchému zprocesování obnovy
+        uživatelských certifikátů na tři kliknutí. Poskytuje uživateli
+        automatizovanou pomoc při zapomenutí, či zablokování tokenu.
+      </p>
+      <p>
+        <b>
+          Poskytněte svým zaměstnancům jednoduchý nástroj, aby byli soběstační.
+          Obnovu certifikátu, či odblokování tokenu zvládnou sami za pár minut.
+        </b>
+      </p>
+      <p>
+        <b>Operátorská aplikace</b>, pomocí které operátor obsluhuje životní
+        cyklus tokenů a certifikátů od přiřazování tokenů uživatelům přes
+        vydávání certifikátů až po zneplatnění certifikátů a recyklaci tokenů.
+      </p>
+      <p>
+        <b>
+          Využívejte intuitivní operátorskou aplikaci pro odbavování procesů
+          vašeho mobilního registračního místa.
+        </b>
+      </p>
+    </div>
+  </div>
+</div>

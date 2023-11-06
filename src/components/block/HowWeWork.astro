@@ -1,0 +1,71 @@
+---
+import Line from "imgs/line.svg?raw";
+import HandShakeIcon from "imgs/hand-shake.svg?raw";
+import HeadSettingIcon from "imgs/head-setting.svg?raw";
+import ArrowBoxIcon from "imgs/arrow-box.svg?raw";
+import HeartIcon from "imgs/heart.svg?raw";
+import BugArrowIcon from "imgs/bug-arrow.svg?raw";
+
+import "./HowWeWork.less";
+---
+
+<div class="how-we-work-wrapper text-center margin-bottom-large">
+  <h1 id="how-we-work" class="margin-bottom-large">Jak pracujeme?</h1>
+  <div class="rotation-wrapper-outer">
+    <div class="rotation-wrapper-inner">
+      <div class="line-icon-wrapper">
+        <div class="line">
+          <Fragment set:html={Line} />
+          <div class="work-tag hand-shake">
+            <Fragment set:html={HandShakeIcon} />
+            <span class="title uppercase">
+              Konzultace<br />
+               anylýza potřeb
+            </span>
+          </div>
+          <div class="work-tag head-setting">
+            <Fragment set:html={HeadSettingIcon} />
+            <span class="title uppercase">
+              Návrh<br />
+               řešení
+            </span>
+          </div>
+          <div class="work-tag arrow-box">
+            <Fragment set:html={ArrowBoxIcon} />
+            <span class="title uppercase">
+              Vývoj<br />
+               implementace
+            </span>
+          </div>
+          <div class="work-tag bug-arrow">
+            <Fragment set:html={BugArrowIcon} />
+            <span class="title uppercase">
+              Podpora<br />
+               maintenance
+            </span>
+          </div>
+          <div class="work-tag heart">
+            <Fragment set:html={HeartIcon} />
+            <span class="title uppercase">Testování</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h2 class="margin-bottom">
+    Usnadňujeme život společnostem vývojem chytrých řešení a automatizací
+    procesů pomocí inovativních technologií.
+  </h2>
+
+  <p class="info-text">
+    <b
+      >Naší hlavní misí je poskytovat komplexní řešení, která nejen splňují
+      potřeby zákazníků, ale také se přizpůsobují jejich vizím.
+    </b>
+    <br />
+     Snažíme se co nejlépe porozumět vašim potřebám a na základě toho vytvářet
+    efektivní systémy. Rádi se s vámi osobně seznámíme, abychom lépe porozuměli
+    vašim potřebám a mohli vám poskytnout co nejlepší službu.
+  </p>
+</div>

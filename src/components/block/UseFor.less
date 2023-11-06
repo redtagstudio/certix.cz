@@ -1,0 +1,66 @@
+@import '../../assets/less/variables.less';
+
+.use-for-wrapper {
+  position: relative;
+  min-height: calc(var(--grid-gutter-large) * 10);
+  padding-top: calc(var(--grid-14-gutter-large) * 3);
+  
+  &::before {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--base-link-color);
+    clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%);
+    z-index: -1;
+  }
+
+  h2 {
+    font-weight: 600;
+    margin-bottom: 2em;
+  }
+
+  .blocks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--grid-gutter-small);
+    justify-content: space-between;
+    
+    > div {
+      flex-basis: 100%;
+
+      > svg {
+        margin-bottom: var(--grid-gutter);
+        height: calc(var(--grid-gutter-large) + var(--grid-gutter));
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 440px) {
+  .use-for-wrapper {
+    padding-top: calc(var(--grid-14-gutter-large) * 2);
+    
+    .blocks {
+      > div {
+        flex-basis: calc(50% - var(--grid-gutter-small));
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: @breakpoint-desktop) {
+  .use-for-wrapper {
+    &::before {
+      clip-path: polygon(0 30%, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    .blocks {
+      > div {
+        flex-basis: calc(25% - var(--grid-gutter-small));
+      }
+    }
+  }
+}

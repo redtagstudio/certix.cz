@@ -1,0 +1,21 @@
+.logo-line-wrapper {
+  .logo-line {
+    display: flex;
+    gap: var(--grid-gutter-small);
+    justify-content: space-between;
+    margin: var(--grid-gutter) 0;
+    align-items: center;
+  
+    > img,
+    > svg {
+      filter: grayscale(1)
+    }
+  }
+  
+  > hr {
+    margin-bottom: var(--grid-gutter-large);
+    background-color: var(--base-light-gray-color);
+    height: 1px; 
+    border: 0;
+  }
+}

@@ -1,5 +1,46 @@
 ---
+import { Image } from "astro:assets";
+import Logo from "../../assets/imgs/logo-text.svg?raw";
+import NisLogo from "imgs/nis2.png";
+import EidasLogo from "imgs/eIdas.png";
+
 import "./Footer.less";
 ---
 
-<footer class="hidden"></footer>
+<script src="../../scripts/footer/toTop.ts"></script>
+<footer class="margin-bottom">
+  <div class="container">
+    <div class="footer-logo">
+      <Fragment set:html={Logo} />
+    </div>
+    <hr class="divider" />
+    <div class="content-wrapper">
+      <p class="copyright small">
+        ©2023 Všechny práva vyhrazena <br /><br />CERTIX s.r.o.
+      </p>
+      <p>
+        ID: 19713134 <br />
+         C 390513, Městského soud v Praze
+      </p>
+      <div class="wrapper">
+        <div class="logo-wrapper">
+          <Image
+            src={EidasLogo}
+            alt={"eidas-logo"}
+            densities={[1, 1.5, 2]}
+            width={64}
+          />
+          <Image
+            src={NisLogo}
+            alt={"nis2-logo"}
+            densities={[1, 1.5, 2]}
+            height={64}
+          />
+        </div>
+        <div id="to-top" class="btn btn-bordered btn-bordered-green">
+          Zpět na začátek
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

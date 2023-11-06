@@ -1,0 +1,44 @@
+---
+import TragetIcon from "../../assets/imgs/target.svg?raw";
+import CertificateIcon from "../../assets/imgs/certificate.svg?raw";
+import ServerIcon from "../../assets/imgs/server.svg?raw";
+import IdeaIcon from "../../assets/imgs/idea.svg?raw";
+
+import "./UseFor.less";
+---
+
+<div class="use-for-wrapper">
+  <div class="container">
+    <h2 class="uppercase text-center white">Využití pro</h2>
+    <div class="blocks text-center white">
+      <div>
+        <Fragment set:html={TragetIcon} />
+        <p class="medium">
+          Velké a středně velké organizace se 100 a více zaměstnanci. Ale i pro
+          menší společnosti či jednotlivce.
+        </p>
+      </div>
+      <div>
+        <Fragment set:html={ServerIcon} />
+        <p class="medium">
+          IT společnosti a správci serverových infrastruktur řešící
+          udržitelnost, kontrolu nad serverovými certifikáty a kyberbezpečnost.
+        </p>
+      </div>
+      <div>
+        <Fragment set:html={IdeaIcon} />
+        <p class="medium">
+          Společnosti, s chutí digitalizovat, transformovat, optimalizovat
+          procesy a svůj čas strávený vydáváním a správou certifikátů.
+        </p>
+      </div>
+      <div>
+        <Fragment set:html={CertificateIcon} />
+        <p class="medium">
+          Státní, zdravotnické a další organizace s povinností dodržovat
+          nařízení evropské směrnice EIDAS.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

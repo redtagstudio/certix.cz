@@ -1,3 +1,5 @@
+@import '../mixins.less';
+
 body {
   font-size: var(--base-font-size);
   line-height: 26px;
@@ -5,6 +7,12 @@ body {
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  overflow-y: auto;
+  scrollbar-color: rgba(0, 0, 0, 0.1) transparent;
+  scrollbar-width: thin;
+
+  .scrollable();
 }
 
 html, body {

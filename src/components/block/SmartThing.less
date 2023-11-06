@@ -1,0 +1,51 @@
+@import '../../assets/less/variables.less';
+
+.smart-thing-wrapper {
+  > h2 {
+    color: var(--base-green-secondary-color);
+  }
+
+  > div.blocks {
+    display: flex;
+    flex-direction: column;
+    gap: var(--grid-gutter);
+    justify-content: space-between;
+
+    > .block {
+      padding: var(--grid-gutter);
+      background-color: var(--base-gray-color);
+      border: 1px solid var(--border-gray-color);
+      border-radius: var(--grid-gutter-smallest);
+      > p {
+        margin-bottom: 0;
+
+        > b {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: @breakpoint-tablet ) {
+  .smart-thing-wrapper {
+    > div.blocks {
+      flex-direction: row;
+      flex-wrap: wrap;
+
+      > .block {
+        flex-basis: calc(50% - var(--grid-gutter));
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: @breakpoint-desktop ) {
+  .smart-thing-wrapper {
+    > div.blocks {
+      > .block {
+        flex-basis: calc(25% - var(--grid-gutter));
+      }
+    }
+  }
+}
