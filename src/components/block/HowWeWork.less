@@ -26,7 +26,7 @@
       .line-icon-wrapper { 
         display: block;
         margin-top: -50%;
-        padding: calc(var(--grid-gutter-large) * 4) var(--grid-gutter-large);
+        padding: calc(var(--grid-gutter-large) * 3) var(--grid-gutter-large);
         overflow: hidden;
 
         > .line {
@@ -40,6 +40,7 @@
           }
 
           > .work-tag {
+            @size: calc(var(--grid-gutter-large) + var(--grid-gutter));
             padding: var(--grid-gutter);
             border-radius: var(--grid-gutter-large);
             background-color: white;
@@ -47,8 +48,8 @@
             top: 0px;
             left: 0;
             box-shadow: 0 0 26px 0 rgba(0,0,0,0.3);
-            width: calc(var(--grid-gutter-large) + var(--grid-gutter));
-            height: calc(var(--grid-gutter-large) + var(--grid-gutter));
+            width: @size;
+            height: @size;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -59,8 +60,8 @@
             }
 
             > .title {
-              top: 50%;
-              transform: translate(-100%, -50%);
+              top: -40%;
+              transform: translate(-60%, -50%);
               font-size: var(--font-14-size);
               font-weight: bold;
               color: var(--base-font-color);
@@ -71,32 +72,32 @@
 
             &:nth-child(2n - 1) {
               > .title {
-                top: 50%;
-                transform: translate(90%, -50%);
+                top: -35%;
+                transform: translate(65%, -50%);
               }
             }
 
             &.hand-shake {
-              left: 5%;
+              left: calc(10% - (@size / 2));
             }
         
             &.head-setting {
-              left: 23%;
+              left: calc(30% - (@size / 2));
             }
         
             &.arrow-box {
-              left: 44%;
+              left: calc(50% - (@size / 2));
               top: -36px;
             }
         
             &.bug-arrow {
-              left: 65%;
-              top: 2px
+              left: calc(70% - (@size / 2));
+              top: 2px;
             }
         
             &.heart {
-              left: 85%;
-              top: 10px
+              left: calc(90% - (@size / 2));
+              top: 10px;
             }
           }  
         }

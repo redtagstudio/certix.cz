@@ -1,19 +1,24 @@
+@import '../../assets/less/mixins.less';
+
 .logo-line-wrapper {
+  padding-bottom: var(--grid-gutter-large);
+
   .logo-line {
     display: flex;
-    gap: var(--grid-gutter-small);
+    gap: var(--grid-gutter);
     justify-content: space-between;
-    margin: var(--grid-gutter) 0;
+    padding: var(--grid-gutter-small) 0;
     align-items: center;
+    .scrollable();
   
     > img,
     > svg {
+      flex-shrink: 0;
       filter: grayscale(1)
     }
   }
   
   > hr {
-    margin-bottom: var(--grid-gutter-large);
     background-color: var(--base-light-gray-color);
     height: 1px; 
     border: 0;

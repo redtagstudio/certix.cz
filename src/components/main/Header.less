@@ -13,18 +13,129 @@ header#layout-header {
       margin-top: var(--grid-gutter-large);
       align-items: center;
       justify-content: space-between;
-      flex-direction: column;
 
       > #certix-logo {
         margin-bottom: var(--grid-gutter);
       }
 
       nav {
+        position: relative;
+
+        .menu-toggle {
+          cursor: pointer;
+          display: inline-block;
+          filter: drop-shadow(12px 4px 12px var(--base-title-color));
+          height: var(--grid-gutter-large);
+          width: var(--grid-gutter-large);
+          z-index: 10;
+          margin-left: 0.8125em;
+          margin-right: 0.8125em;
+          transform: rotate(0deg);
+          transition: transform .5s ease-in-out;
+
+          > span {
+            background-color: #fff;
+            border-radius: 4px;
+            display: block;
+            height: 4px;
+            left: 25%;
+            opacity: 1;
+            position: absolute;
+            transform: rotate(0deg);
+            transform-origin: center center;
+            transition-duration: .25s;
+            transition-property: transform,top,margin-top,opacity;
+            transition-timing-function: ease-in-out;
+            width: 50%;
+
+            &:first-child {
+              margin-top: 4px;
+              top: calc(var(--grid-gutter-large) / 4);
+            }
+
+            &:nth-child(2) {
+              margin-top: 8px;
+              top: calc(var(--grid-gutter-large) / 3);
+            }
+
+            &:nth-child(3) {
+              margin-top: 7px;
+              top: calc(var(--grid-gutter-large) / 2);
+            }
+          }
+
+          &.active {
+            > span {
+              &:first-child {
+                top: 48%;
+                margin-top: 0;
+                transform: rotate(45deg);
+              }
+
+              &:nth-child(2) {
+                width: 0;
+                opacity: 0;
+              }
+
+              &:nth-child(3) {
+                top: 48%;
+                margin-top: 0;
+                transform: rotate(-45deg);
+              }
+            }
+          }
+        }
+
         ul {
-          display: flex;
+          display: none;
           column-gap: var(--grid-gutter-large);
           row-gap: var(--grid-gutter-small);
           flex-direction: column;
+          
+          &.active {
+            min-width: calc(var(--grid-gutter-large) * 3);
+            display: flex;
+            position: absolute;
+            background-color: white;
+            padding: var(--grid-gutter-small);
+            right: 0;
+            top: calc(100% - var(--grid-gutter));
+            border-radius: var(--grid-gutter-small);
+            box-shadow: 0 0 26px 0 rgba(0,0,0,0.3);
+
+            @grid-gutter: var(--grid-gutter);
+            @grid-gutter-small: var(--grid-gutter-small);
+            @grid-gutter-smallest: var(--grid-gutter-smallest);
+            @arrow-shadow-size: 0.625em;
+            &::before {
+              position: absolute;
+              right: calc(@grid-gutter + (@grid-gutter-smallest / 2));
+              width: @grid-gutter-small;
+              height: @grid-gutter-small;
+              clip-path: polygon(
+                -@arrow-shadow-size -@arrow-shadow-size, 
+                calc(100% + @arrow-shadow-size) -@arrow-shadow-size, 
+                calc(100% + @arrow-shadow-size) calc(100% + @arrow-shadow-size)
+              );
+              content: "";
+              background-color: #fff;
+              top: 0;
+              transform: translate(-50%,-50%) rotate(-45deg);
+            }
+
+            li {
+              white-space: nowrap;
+
+              a {
+                color: var(--base-font-color);
+                display: block;
+
+                &:hover {
+                  color: var(--base-green-color);
+                }
+              }
+            }
+          }
 
           li {
             list-style: none;
@@ -48,15 +159,6 @@ header#layout-header {
             }
           }
         }
-      }
-
-      hr.menu-line { 
-        margin-bottom: var(--grid-gutter-large);
-        background-color: var(--base-light-gray-color);
-        height: 1px; 
-        border: 0;
-        width: 100%;
-        margin-top: var(--grid-gutter-large);
       }
     }
 
@@ -103,7 +205,6 @@ header#layout-header {
     }
   }
 
-
   .scroller {
     width: max-content;
     display: inline-block;
@@ -143,12 +244,15 @@ header#layout-header {
           margin-bottom: 0
         }
 
-        nav ul {
-          flex-direction: row;
-        }
+        nav {
+          > .menu-toggle {
+            display: none;
+          }
 
-        hr.menu-line { 
-          display: none;
+           ul {
+            display: flex;
+            flex-direction: row;
+          }
         }
       }
     }

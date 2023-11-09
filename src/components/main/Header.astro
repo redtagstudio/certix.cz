@@ -8,12 +8,18 @@ import "./Header.less";
 ---
 
 <script src="../../scripts/bindLinkScroll.ts"></script>
+<script src="../../scripts/header/toggleMenu.ts"></script>
 <header id="layout-header" class="overflow-hidden">
   <Background />
   <div class="container">
     <div class="logo-wrapper">
       <Logo />
       <nav>
+        <div id="menu-toggle" class="menu-toggle margin-bottom">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
         <ul class="no-margin-bottom">
           <li>
             <a href="#how-we-work">Co děláme</a>
@@ -26,7 +32,6 @@ import "./Header.less";
           </li>
         </ul>
       </nav>
-      <hr class="menu-line" />
     </div>
     <div class="header-wrapper container">
       <div class="information">
