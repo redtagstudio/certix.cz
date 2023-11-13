@@ -4,7 +4,7 @@ import OperatorImage from "imgs/operatorApp.png";
 import ClientImage from "imgs/clientApp.png";
 import CmsImage from "imgs/cms.png";
 import AgentImage from "imgs/agent.png";
-import XConnectImage from "imgs/x-connect.png";
+import XConnectImage from "imgs/x-connect.svg?raw";
 
 import "./Product.less";
 ---
@@ -85,13 +85,7 @@ import "./Product.less";
       </p>
     </div>
     <div class="image-container">
-      <Image
-        src={XConnectImage}
-        alt="dashboard"
-        densities={[0.5, 1, 1.5, 2, 2.5, 3]}
-        loading={"lazy"}
-        width={590}
-      />
+      <Fragment set:html={XConnectImage} />
     </div>
   </div>
   <div class="block">
