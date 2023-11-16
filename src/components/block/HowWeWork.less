@@ -76,6 +76,10 @@
               line-height: var(--grid-14-gutter);
               position: absolute;
               width: calc((var(--grid-gutter-large) + var(--grid-gutter)) * 2);
+
+              &.smaller {
+                top: -20%;
+              }
             }
 
             &:nth-child(2n - 1) {
@@ -147,6 +151,10 @@
               > .title {
                 top: 120%;
                 transform: none;
+
+                &.smaller {
+                  top: 120%
+                }
               }
 
               &:nth-child(2n - 1) {

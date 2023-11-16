@@ -1,6 +1,8 @@
 @import '../../assets/less/variables.less';
 
 .product-wrapper {
+  padding-bottom: calc(var(--grid-gutter-large) * 2);
+  
   > h1 {
     color: var(--base-title-color);
   }
@@ -78,6 +80,8 @@
 
 @media only screen and (min-width: @breakpoint-desktop ) {
   .product-wrapper {
+    padding-bottom: calc(var(--grid-gutter-large) * 4);
+    
     > div.block {
       flex-direction: row;
       justify-content: space-between;
