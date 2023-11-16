@@ -89,7 +89,7 @@
       </g>
       <text id="ACTIVE_DIRECTORY_Centrální_zdroj_uživatelů_" data-name="ACTIVE 
 DIRECTORY
-(Centrální zdroj uživatelů)" transform="translate(1068.258 4171.956)" fill="#0d1e65" font-size="10" font-family="NeueEinstellung-Bold, Neue Einstellung" font-weight="700"><tspan x="-19.915" y="0">ACTIVE </tspan><tspan x="-28.775" y="13">DIRECTOR</tspan><tspan y="13" font-family="NeueEinstellung-SemiBold, Neue Einstellung" font-weight="600">Y</tspan><tspan font-family="NeueEinstellung-SemiBold, Neue Einstellung" font-weight="600"><tspan x="-62.995" y="26">(Centrální zdroj uživatelů)</tspan></tspan></text>
+(Centrální zdroj uživatelů)" transform="translate(1068.258 4171.956)" fill="#0d1e65" font-size="10" font-family="Montserrat" font-weight="700"><tspan x="-19.915" y="0">ACTIVE </tspan><tspan x="-28.775" y="13">DIRECTOR</tspan><tspan y="13" font-family="Montserrat" font-weight="600">Y</tspan><tspan font-family="Montserrat" font-weight="600"><tspan x="-62.995" y="26">(Centrální zdroj uživatelů)</tspan></tspan></text>
       <g id="Group_480" data-name="Group 480" transform="translate(1647.258 777.317)">
         <g id="database-export" transform="translate(-629.929 3264)">
           <g id="Group_368" data-name="Group 368" transform="translate(32 24)">
@@ -106,7 +106,7 @@ DIRECTORY
           </g>
         </g>
       </g>
-      <text id="INETGARCE" transform="translate(1068.258 4153.956)" fill="#184aed" font-size="9" font-family="NeueEinstellung-SemiBold, Neue Einstellung" font-weight="600"><tspan x="-25.875" y="0">INETGARCE</tspan></text>
+      <text id="INETGARCE" transform="translate(1068.258 4153.956)" fill="#184aed" font-size="9" font-family="Montserrat" font-weight="600"><tspan x="-25.875" y="0">INETGARCE</tspan></text>
     </g>
     <g id="Group_508" data-name="Group 508" transform="translate(147.035 -8.175)">
       <g transform="matrix(1, 0, 0, 1, 953.96, 3832.39)" filter="url(#Ellipse_187)">
@@ -114,11 +114,11 @@ DIRECTORY
       </g>
       <text id="InternÍ_CERTIFIKAČNÍ_AUTORITA_PKI_" data-name="InternÍ
 CERTIFIKAČNÍ AUTORITA
-(PKI)" transform="translate(1275 4442.19)" fill="#0d1e65" font-size="10" font-family="NeueEinstellung-Bold, Neue Einstellung" font-weight="700"><tspan x="-20.71" y="0">INTERNÍ</tspan><tspan x="-63.125" y="13">CERTIFIKAČNÍ AUTORITA</tspan><tspan font-family="NeueEinstellung-SemiBold, Neue Einstellung" font-weight="600"><tspan x="-11.805" y="26">(PKI)</tspan></tspan></text>
+(PKI)" transform="translate(1275 4442.19)" fill="#0d1e65" font-size="10" font-family="Montserrat" font-weight="700"><tspan x="-20.71" y="0">INTERNÍ</tspan><tspan x="-63.125" y="13">CERTIFIKAČNÍ AUTORITA</tspan><tspan font-family="Montserrat" font-weight="600"><tspan x="-11.805" y="26">(PKI)</tspan></tspan></text>
       <g transform="matrix(1, 0, 0, 1, 953.96, 3832.39)" filter="url(#Ellipse_188)">
         <circle id="Ellipse_188-2" data-name="Ellipse 188" cx="28.5" cy="28.5" r="28.5" transform="translate(292.54 438.16)" fill="#fff"/>
       </g>
-      <text id="PKI" transform="translate(1275.5 4302.551)" fill="#184aed" font-size="12" font-family="NeueEinstellung-Bold, Neue Einstellung" font-weight="700"><tspan x="-9.864" y="0">PKI</tspan></text>
+      <text id="PKI" transform="translate(1275.5 4302.551)" fill="#184aed" font-size="12" font-family="Montserrat" font-weight="700"><tspan x="-9.864" y="0">PKI</tspan></text>
       <g id="Group_479" data-name="Group 479" transform="translate(1685 1249.551)">
         <g id="shield" transform="translate(-458 3081)">
           <g id="Group_369" data-name="Group 369" transform="translate(32 16)">
@@ -127,7 +127,7 @@ CERTIFIKAČNÍ AUTORITA
         </g>
         <path id="Path_487" data-name="Path 487" d="M72,83.9l3.9,3.9L83.7,80" transform="translate(-488.5 3031.596)" fill="none" stroke="#184aed" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
       </g>
-      <text id="INETGARCE-2" data-name="INETGARCE" transform="translate(1275 4403.19)" fill="#184aed" font-size="8" font-family="NeueEinstellung-SemiBold, Neue Einstellung" font-weight="600"><tspan x="-23" y="0">INETGARCE</tspan></text>
+      <text id="INETGARCE-2" data-name="INETGARCE" transform="translate(1275 4403.19)" fill="#184aed" font-size="8" font-family="Montserrat" font-weight="600"><tspan x="-23" y="0">INETGARCE</tspan></text>
     </g>
     <g id="Group_509" data-name="Group 509" transform="translate(-175.5 -251.141)">
       <g transform="matrix(1, 0, 0, 1, 1276.5, 4075.36)" filter="url(#Path_591)">
@@ -135,7 +135,7 @@ CERTIFIKAČNÍ AUTORITA
       </g>
       <text id="AKREDITOVANÉ_CERTIFIKAČNÍ_AUTORITY" data-name="AKREDITOVANÉ 
 CERTIFIKAČNÍ 
-AUTORITY" transform="translate(1601 4241)" fill="#0d1e65" font-size="10" font-family="NeueEinstellung-Bold, Neue Einstellung" font-weight="700"><tspan x="-41.81" y="0">AKREDITOVANÉ </tspan><tspan x="-37.085" y="13">CERTIFIKAČNÍ </tspan><tspan x="-25.59" y="26">AUTORITY</tspan></text>
+AUTORITY" transform="translate(1601 4241)" fill="#0d1e65" font-size="10" font-family="Montserrat" font-weight="700"><tspan x="-41.81" y="0">AKREDITOVANÉ </tspan><tspan x="-37.085" y="13">CERTIFIKAČNÍ </tspan><tspan x="-25.59" y="26">AUTORITY</tspan></text>
       <g id="Group_481" data-name="Group 481" transform="translate(1698.5 1027.477)">
         <g id="authority-building" transform="translate(-119 3109.884)">
           <path id="Path_466" data-name="Path 466" d="M49.937,124.59H79.372v10.459H49.937Z" transform="translate(-42.724 -91.391)" fill="#3f3f3f"/>
@@ -169,13 +169,13 @@ AUTORITY" transform="translate(1601 4241)" fill="#0d1e65" font-size="10" font-fa
       </g>
       <text id="Czech_point_synchronizace_informací_o_certifikátech_" data-name="Czech point
 (synchronizace informací 
-o certifikátech)" transform="translate(1461 4166.956)" fill="#0d1e65" font-size="10" font-family="NeueEinstellung-Bold, Neue Einstellung" font-weight="700"><tspan x="-34.94" y="0">CZECH POINT</tspan><tspan font-family="NeueEinstellung-SemiBold, Neue Einstellung" font-weight="600"><tspan x="-62.49" y="13">(synchronizace informací </tspan><tspan x="-37.73" y="26">o certifikátech)</tspan></tspan></text>
+o certifikátech)" transform="translate(1461 4166.956)" fill="#0d1e65" font-size="10" font-family="Montserrat" font-weight="700"><tspan x="-34.94" y="0">CZECH POINT</tspan><tspan font-family="Montserrat" font-weight="600"><tspan x="-62.49" y="13">(synchronizace informací </tspan><tspan x="-37.73" y="26">o certifikátech)</tspan></tspan></text>
       <g transform="matrix(1, 0, 0, 1, 942, 3881.11)" filter="url(#Ellipse_194)">
         <circle id="Ellipse_194-2" data-name="Ellipse 194" cx="28.5" cy="28.5" r="28.5" transform="translate(439.5 126.21)" fill="#fff"/>
       </g>
-      <text id="ČP" transform="translate(1410.5 4039.317)" fill="#184aed" font-size="12" font-family="NeueEinstellung-Bold, Neue Einstellung" font-weight="700"><tspan x="-8.274" y="0">ČP</tspan></text>
+      <text id="ČP" transform="translate(1410.5 4039.317)" fill="#184aed" font-size="12" font-family="Montserrat" font-weight="700"><tspan x="-8.274" y="0">ČP</tspan></text>
       <g id="Group_482" data-name="Group 482" transform="translate(1424 4064.317)">
-        <g id="Group_464" data-name="Group 464" clip-path="url(#clip-path)">
+        <g id="Group_464" data-name="Group 464">
           <path id="Path_557" data-name="Path 557" d="M83.067,25.165A16.577,16.577,0,0,1,66.49,41.743a16.913,16.913,0,0,1-11.012-4.455s-.986-.852-1.059-.927A12.891,12.891,0,0,0,45.831,32.7h0a12.893,12.893,0,0,0-8.589,3.659c-.073.074-1.059.927-1.059.927a16.912,16.912,0,0,1-11.011,4.455A16.578,16.578,0,0,1,8.595,25.165h0A16.577,16.577,0,0,1,25.172,8.589a16.913,16.913,0,0,1,11.011,4.455s.986.852,1.059.925a12.881,12.881,0,0,0,8.589,3.66h0a12.879,12.879,0,0,0,8.588-3.66c.072-.074,1.059-.925,1.059-.925A16.914,16.914,0,0,1,66.49,8.589,16.576,16.576,0,0,1,83.067,25.166Z" transform="translate(-7.327 -7.322)" fill="#009be3"/>
           <path id="Path_558" data-name="Path 558" d="M77.582,104.7a2.071,2.071,0,0,1-2.115,1.734,2.14,2.14,0,0,1-1.886-1.083c-.195-.354-.262-.532-.262-1.98s.067-1.624.262-1.978a2.161,2.161,0,0,1,4,.7h-.965a1.215,1.215,0,0,0-1.15-.871,1.161,1.161,0,0,0-.931.439c-.237.3-.3.475-.3,1.708s.067,1.405.3,1.71a1.16,1.16,0,0,0,.931.44,1.237,1.237,0,0,0,1.15-.821Z" transform="translate(-62.504 -85.513)" fill="#161615"/>
           <path id="Path_559" data-name="Path 559" d="M111.55,105.915l2.732-4.449h-2.621v-.812H115.4v.685l-2.739,4.475H115.4v.861H111.55Z" transform="translate(-95.096 -85.808)" fill="#161615"/>
@@ -209,12 +209,12 @@ o certifikátech)" transform="translate(1461 4166.956)" fill="#0d1e65" font-size
         </g>
         <text id="Podnikové_systémy_Ověřování_platnosti_certifikátů_" data-name="Podnikové systémy
 (Ověřování platnosti 
-certifikátů)" transform="translate(1788.5 4593)" fill="#0d1e65" font-size="10" font-family="NeueEinstellung-SemiBold, Neue Einstellung" font-weight="600"><tspan x="-54.165" y="0">PODNIKOVÉ SYSTÉMY</tspan><tspan x="-51.515" y="13">(Ověřování platnosti </tspan><tspan x="-27.165" y="26">certifikátů)</tspan></text>
+certifikátů)" transform="translate(1788.5 4593)" fill="#0d1e65" font-size="10" font-family="Montserrat" font-weight="600"><tspan x="-54.165" y="0">PODNIKOVÉ SYSTÉMY</tspan><tspan x="-51.515" y="13">(Ověřování platnosti </tspan><tspan x="-27.165" y="26">certifikátů)</tspan></text>
         <g transform="matrix(1, 0, 0, 1, 1270, 4083.34)" filter="url(#Ellipse_196)">
           <circle id="Ellipse_196-2" data-name="Ellipse 196" cx="28.5" cy="28.5" r="28.5" transform="translate(439.5 340.66)" fill="#fff"/>
         </g>
-        <text id="IS" transform="translate(1738.5 4456)" fill="#184aed" font-size="12" font-family="NeueEinstellung-Bold, Neue Einstellung" font-weight="700"><tspan x="-5.418" y="0">IS</tspan></text>
-        <text id="INTEGARCE" transform="translate(1788.5 4576)" fill="#184aed" font-size="9" font-family="NeueEinstellung-SemiBold, Neue Einstellung" font-weight="600"><tspan x="-25.911" y="0">INTEGARCE</tspan></text>
+        <text id="IS" transform="translate(1738.5 4456)" fill="#184aed" font-size="12" font-family="Montserrat" font-weight="700"><tspan x="-5.418" y="0">IS</tspan></text>
+        <text id="INTEGARCE" transform="translate(1788.5 4576)" fill="#184aed" font-size="9" font-family="Montserrat" font-weight="600"><tspan x="-25.911" y="0">INTEGARCE</tspan></text>
         <g id="coordinate-system" transform="translate(1748 4447)">
           <g id="Group_442" data-name="Group 442" transform="translate(16 24)">
             <path id="Path_545" data-name="Path 545" d="M57.426,48l17.426,9.958V77.874L57.426,87.832,40,77.874V57.958Z" transform="translate(-32.532 -40.532)" fill="none" stroke="#000" stroke-linejoin="round" stroke-width="2.5"/>
@@ -235,12 +235,12 @@ certifikátů)" transform="translate(1788.5 4593)" fill="#0d1e65" font-size="10"
       <text id="Windows_certificate_storE_Ukládání_certifikátů_do_souboru_" data-name="Windows 
 certificate storE
 (Ukládání certifikátů 
-do souboru)" transform="translate(1797.1 5230.251)" fill="#0d1e65" font-size="10" font-family="NeueEinstellung-SemiBold, Neue Einstellung" font-weight="600"><tspan x="-27.965" y="0">WINDOWS </tspan><tspan x="-48.565" y="13">CERTIFICATE STORE</tspan><tspan x="-52.19" y="26">(Ukládání certifikátů </tspan><tspan x="-29.18" y="39">do souboru)</tspan></text>
+do souboru)" transform="translate(1797.1 5230.251)" fill="#0d1e65" font-size="10" font-family="Montserrat" font-weight="600"><tspan x="-27.965" y="0">WINDOWS </tspan><tspan x="-48.565" y="13">CERTIFICATE STORE</tspan><tspan x="-52.19" y="26">(Ukládání certifikátů </tspan><tspan x="-29.18" y="39">do souboru)</tspan></text>
       <g transform="matrix(1, 0, 0, 1, 1662, 4736.4)" filter="url(#Ellipse_198)">
         <circle id="Ellipse_198-2" data-name="Ellipse 198" cx="28.5" cy="28.5" r="28.5" transform="translate(163 331.74)" fill="#fff"/>
       </g>
-      <text id="STORE" transform="translate(1854 5100.137)" fill="#184aed" font-size="12" font-family="NeueEinstellung-Bold, Neue Einstellung" font-weight="700"><tspan x="-19.302" y="0">STORE</tspan></text>
-      <text id="INTEGARCE-2" data-name="INTEGARCE" transform="translate(1796 5213.876)" fill="#184aed" font-size="9" font-family="NeueEinstellung-SemiBold, Neue Einstellung" font-weight="600"><tspan x="-25.911" y="0">INTEGARCE</tspan></text>
+      <text id="STORE" transform="translate(1854 5100.137)" fill="#184aed" font-size="12" font-family="Montserrat" font-weight="700"><tspan x="-19.302" y="0">STORE</tspan></text>
+      <text id="INTEGARCE-2" data-name="INTEGARCE" transform="translate(1796 5213.876)" fill="#184aed" font-size="9" font-family="Montserrat" font-weight="600"><tspan x="-25.911" y="0">INTEGARCE</tspan></text>
       <g id="Group_484" data-name="Group 484" transform="translate(2212.681 2013.852)">
         <g id="shield-2" data-name="shield" transform="translate(-426 3097)">
           <g id="Group_369-2" data-name="Group 369" transform="translate(0 0)">
@@ -272,7 +272,7 @@ do souboru)" transform="translate(1797.1 5230.251)" fill="#0d1e65" font-size="10
       </g>
     </g>
     <text id="cms_server_" data-name="cms server
-" transform="translate(1425 4203.268)" fill="#0d1e65" font-size="11" font-family="NeueEinstellung-Bold, Neue Einstellung" font-weight="700"><tspan x="-35.37" y="0">CMS SERVER</tspan><tspan y="0" font-family="NeueEinstellung-SemiBold, Neue Einstellung" font-weight="600"></tspan><tspan font-family="NeueEinstellung-SemiBold, Neue Einstellung" font-weight="600"><tspan x="0" y="15"></tspan></tspan></text>
+" transform="translate(1425 4203.268)" fill="#0d1e65" font-size="11" font-family="Montserrat" font-weight="700"><tspan x="-35.37" y="0">CMS SERVER</tspan><tspan y="0" font-family="Montserrat" font-weight="600"></tspan><tspan font-family="Montserrat" font-weight="600"><tspan x="0" y="15"></tspan></tspan></text>
     <g id="arrow-up-short" transform="translate(1361.921 4006.261)">
       <g id="Group_432" data-name="Group 432" transform="translate(53.992 47.989)">
         <path id="Path_544" data-name="Path 544" d="M60.114,61.98a.874.874,0,0,0,.874-.874V50.976l3.753,3.754a.875.875,0,0,0,1.238-1.238l-5.246-5.246a.874.874,0,0,0-1.238,0l-5.246,5.246a.875.875,0,0,0,1.238,1.238l3.753-3.754v10.13A.874.874,0,0,0,60.114,61.98Z" transform="translate(-53.992 -47.989)" fill="#d0d0d0" fill-rule="evenodd"/>
@@ -296,7 +296,7 @@ do souboru)" transform="translate(1797.1 5230.251)" fill="#0d1e65" font-size="10
     <g transform="matrix(1, 0, 0, 1, 1101, 3824.22)" filter="url(#Ellipse_210)">
       <circle id="Ellipse_210-2" data-name="Ellipse 210" cx="28.5" cy="28.5" r="28.5" transform="translate(151 129.21)" fill="#fff"/>
     </g>
-    <text id="IDM" transform="translate(1281 3985.431)" fill="#184aed" font-size="12" font-family="NeueEinstellung-Bold, Neue Einstellung" font-weight="700"><tspan x="-12.246" y="0">IDM</tspan></text>
-    <text id="INTEGARCE-3" data-name="INTEGARCE" transform="translate(1620.5 4095.224)" fill="#184aed" font-size="9" font-family="NeueEinstellung-SemiBold, Neue Einstellung" font-weight="600"><tspan x="-25.911" y="0">INTEGARCE</tspan></text>
+    <text id="IDM" transform="translate(1281 3985.431)" fill="#184aed" font-size="12" font-family="Montserrat" font-weight="700"><tspan x="-12.246" y="0">IDM</tspan></text>
+    <text id="INTEGARCE-3" data-name="INTEGARCE" transform="translate(1620.5 4095.224)" fill="#184aed" font-size="9" font-family="Montserrat" font-weight="600"><tspan x="-25.911" y="0">INTEGARCE</tspan></text>
   </g>
 </svg>
