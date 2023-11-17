@@ -23,4 +23,7 @@ if(btnToTop) {
   }, 250)
 
   window.addEventListener('scroll', onScroll)
+
+  //Init state
+  onScroll()
 }
