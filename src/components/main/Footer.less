@@ -46,6 +46,7 @@ footer {
     visibility: visible;
     opacity: 1;
     z-index: 10;
+    box-shadow: 0 0 26px 0 rgba(0,0,0,0.3);
 
     &:not(.active) {
       opacity: 0;
@@ -64,7 +65,23 @@ footer {
       left: 50%;
       top: 50%;
     }
-    box-shadow: 0 0 26px 0 rgba(0,0,0,0.3);
+  }
+}
+
+@media only screen and (max-width: @breakpoint-tablet) {
+  footer {
+    > .content {
+      .copyright-payment {
+        .mobile-one-line {
+          display: block;
+          text-align: center;
+        }
+
+        .mobile-hide {
+          display: none;
+        }
+      }
+    }
   }
 }
 

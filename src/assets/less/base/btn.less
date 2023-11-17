@@ -1,7 +1,20 @@
 .btn {
-  color :white;
-  padding: var(--grid-gutter-smallest) var(--grid-gutter-small);
-  border-radius: calc(var(--grid-gutter-smallest) / 2);
+  position: relative;
+  color: white;
+  padding: var(--grid-gutter-small) var(--grid-gutter);
+  line-height: var(--grid-gutter);
+  display: inline-block;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: calc(var(--grid-gutter-smallest) / 2);
+    border: 2px solid transparent; 
+  }
 
   &:hover {
     color: white;
@@ -13,7 +26,11 @@
     background-clip: padding-box;
     background-repeat:no-repeat;
     background-position: 0% 0%;
-    border: 2px solid var(--btn-primary-bg-color);
+    border-radius: calc(var(--grid-gutter-smallest) / 2);
+
+    &::before {
+      border-color: var(--btn-primary-bg-color);
+    }
     
     &:hover {
       background-color: var(--btn-primary-bg-over-color);
@@ -21,32 +38,48 @@
   }
   
   &-bordered {
-    border: 2px solid var(--btn-color);
+    &::before {
+      content: '';
+      border-color: var(--btn-color); 
+    }
+  
 
     &:hover {
-      border-color: white;
+      &::before {
+        border-color: white;
+      }
     }
 
     &-green {
-      border-color: var(--base-green-color);
+      &::before {
+        border-color: var(--base-green-color);
+      }
 
       &:hover {
-        border-color: var(--base-green-hover-color);
+        &::before {
+          border-color: var(--base-green-hover-color);
+        }
       }
     }
 
     &-title {
-      border-color: var(--base-title-color);
+      &::before {
+        border-color: var(--base-title-color);
+      }
 
       &:hover {
         color: var(--base-font-color);
-        border-color: var(--base-title-color);
+        &::before {
+          border-color: var(--base-title-color);
+          border-color: var(--base-title-color);
+        }
       }
     }
   }
 
   &-small {
     font-size: var(--font-14-size);
-    padding: var(--grid-14-gutter-smallest) var(--grid-14-gutter-smallest);
+    line-height: var(--grid-14-gutter);
+    padding: var(--grid-14-gutter-small) var(--grid-14-gutter);
   }
 }
