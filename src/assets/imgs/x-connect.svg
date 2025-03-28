@@ -271,8 +271,8 @@ do souboru)" transform="translate(1797.1 5230.251)" fill="#0d1e65" font-size="10
         <path id="Path_542" data-name="Path 542" d="M191.343,115.407H165.364v-2.648h25.979Zm-25.484-.5h24.988v-1.658H165.859Z" transform="translate(1363.887 2137.524)" fill="#002d4f"/>
       </g>
     </g>
-    <text id="cms_server_" data-name="cms server
-" transform="translate(1425 4203.268)" fill="#0d1e65" font-size="11" font-family="Montserrat" font-weight="700"><tspan x="-35.37" y="0">CMS SERVER</tspan><tspan y="0" font-family="Montserrat" font-weight="600"></tspan><tspan font-family="Montserrat" font-weight="600"><tspan x="0" y="15"></tspan></tspan></text>
+    <text id="gitrix_server_" data-name="gitrix server
+" transform="translate(1425 4203.268)" fill="#0d1e65" font-size="11" font-family="Montserrat" font-weight="700"><tspan x="-35.37" y="0">GITRIX SERVER</tspan><tspan y="0" font-family="Montserrat" font-weight="600"></tspan><tspan font-family="Montserrat" font-weight="600"><tspan x="0" y="15"></tspan></tspan></text>
     <g id="arrow-up-short" transform="translate(1361.921 4006.261)">
       <g id="Group_432" data-name="Group 432" transform="translate(53.992 47.989)">
         <path id="Path_544" data-name="Path 544" d="M60.114,61.98a.874.874,0,0,0,.874-.874V50.976l3.753,3.754a.875.875,0,0,0,1.238-1.238l-5.246-5.246a.874.874,0,0,0-1.238,0l-5.246,5.246a.875.875,0,0,0,1.238,1.238l3.753-3.754v10.13A.874.874,0,0,0,60.114,61.98Z" transform="translate(-53.992 -47.989)" fill="#d0d0d0" fill-rule="evenodd"/>
